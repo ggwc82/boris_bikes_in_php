@@ -1,5 +1,5 @@
 <?php
-use 
+
 class DockingStation
 {
 
