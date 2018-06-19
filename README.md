@@ -21,3 +21,14 @@ Diagrammatically to show how the objects use messages to communicate with each o
 
 Bike <-- working? --> true/false
 DockingStation <-- release_bike --> a Bike
+
+
+
+---------------
+
+## Installation
+
+Composer install
+
+Run:
+./vendor/bin/phpunit --bootstrap vendor/autoload.php tests/DockingStationTest.php
