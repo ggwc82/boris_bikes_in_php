@@ -1,0 +1,3 @@
+<?php
+
+$station = new DockingStation();
