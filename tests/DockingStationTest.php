@@ -41,4 +41,10 @@ class DockingStationTest extends TestCase
             'Class doesn\'t have a method is_working'
         );
     }
+
+    public function test_released_bike_has_method_is_working_and_is_true()
+    {   
+        $released_bike = $this->dockingstation->release_bike();
+        $this->assertTrue($released_bike->is_working());
+    }
 }
