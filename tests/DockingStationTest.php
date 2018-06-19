@@ -20,7 +20,7 @@ class DockingStationTest extends TestCase
     {
         $this->assertTrue(
             method_exists($this->dockingstation, 'release_bike'),
-            'Class doesn not have a method release_bike'
+            'Class doesn\'t not have a method release_bike'
         );
     }
 }
