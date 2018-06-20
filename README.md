@@ -1,6 +1,6 @@
 # Boris Bikes in PHP
 
-Practicing the basics with OOP and TDD in PHP with PHPUnit 
+Practicing the basics with OOP and TDD in PHP with PHPSpec
 
 User Stories -> Domain Models
 
@@ -43,4 +43,4 @@ Docking Station | dock, dock_status
 Composer install
 
 Run:
-./vendor/bin/phpunit --bootstrap vendor/autoload.php tests/DockingStationTest.php
+bin/phpspec run

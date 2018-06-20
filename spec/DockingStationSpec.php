@@ -23,4 +23,11 @@ class DockingStationSpec extends ObjectBehavior
         $bike = new \Bike();
         $this->dock($bike)->shouldReturnAnInstanceOf('Bike');
     }
+
+    function it_should_return_a_docked_bike_instance()
+    {   
+        $bike = new \Bike();
+        $this->dock($bike);
+        $this->bike()->shouldReturn($bike);
+    }
 }
