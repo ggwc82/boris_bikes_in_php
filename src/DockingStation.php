@@ -2,8 +2,13 @@
 
 class DockingStation
 {
-    public function release_bike()
+    public function releaseBike()
     {
         return new Bike();
+    }
+
+    public function dock($bike)
+    {
+        return $bike;
     }
 }

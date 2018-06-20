@@ -15,6 +15,12 @@ class DockingStationSpec extends ObjectBehavior
 
     function it_should_release_a_bike()
     {   
-        $this->release_bike()->shouldReturnAnInstanceOf('Bike');
+        $this->releaseBike()->shouldReturnAnInstanceOf('Bike');
+    }
+
+    function it_should_dock_a_bike()
+    {
+        $bike = new \Bike();
+        $this->dock($bike)->shouldReturnAnInstanceOf('Bike');
     }
 }

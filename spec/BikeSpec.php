@@ -12,4 +12,9 @@ class BikeSpec extends ObjectBehavior
     {
         $this->shouldHaveType(Bike::class);
     }
+    
+    function it_should_be_working()
+    {
+        $this->shouldBeWorking();
+    }
 }

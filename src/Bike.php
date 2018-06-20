@@ -2,7 +2,7 @@
 
 class Bike
 {
-    public function is_working()
+    public function isWorking()
     {
         return true;
     }
