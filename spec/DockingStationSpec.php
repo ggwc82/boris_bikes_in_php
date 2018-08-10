@@ -30,4 +30,10 @@ class DockingStationSpec extends ObjectBehavior
         $this->dock($bike);
         $this->bike()->shouldReturn($bike);
     }
+
+    function it_raises_an_error_when_no_bikes_are_available()
+    {
+        $bike = new \Bike();
+        $this->bike()->shouldThrow('\InvalidArgumentException');
+    }
 }
